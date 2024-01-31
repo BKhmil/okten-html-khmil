@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            --header-width: 800px;
+            --gap: 20px;
+        }
+
+        .container {
+            width: var(--header-width);
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--gap);
+            color: white;
+            font-size: 32px;
+            margin: auto;
+        }
+
+        .header {
+            width: 100%;
+            height: 200px;
+            background-color: #216abb;
+
+        }
+
+        .main {
+            width: calc((var(--header-width) - (var(--gap) * 2)) / 3);
+            height: 180px;
+            background-color: #16457a;
+        }
+
+        .footer {
+            width: 100%;
+            height: 300px;
+            background-color: #216abb;
+        }
+
+        .flex {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header flex"><span>Widgets</span></div>
+    <div class="main flex"><span>Big Widgets</span></div>
+    <div class="main flex"><span>Bigger Widgets</span></div>
+    <div class="main flex"><span>Huge Widgets</span></div>
+    <div class="footer flex"><span>Contact</span></div>
+</div>
+</body>
+</html>
