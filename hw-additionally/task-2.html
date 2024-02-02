@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            font-family: Arial, sans-serif;
+        }
+
+        .wrapper {
+            width: 1000px;
+            display: flex;
+            flex-flow: row wrap;
+            margin: 50px auto;
+            gap: 30px;
+        }
+
+        .item {
+            width: 400px;
+            height: 200px;
+            border-radius: 10px;
+            padding: 40px;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: space-between;
+        }
+
+        span {
+            font-size: 22px;
+        }
+
+        h1 {
+            font-size: 32px;
+            font-weight: 700;
+            margin: 0;
+        }
+
+        button {
+            padding: 0 20px;
+            width: fit-content;
+            height: 25%;
+            color: white;
+            text-decoration-line: underline;
+            font-size: 22px;
+            background-color: black;
+            border: none;
+            outline: none;
+            border-radius: 10px;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <div class="item" style="background-color: #699BF7">
+        <!--  огорнув span та h1 в кожному ітемі для того щоб застосувати між ними та кнопкою justify-content: space-between;
+              бо для button чомусь justify-self: flex-end; не працювало, стиль ігнорувався навіть при !important   -->
+        <div class="container">
+            <span>Tutorial video</span>
+            <h1>Dev Mode tutorial</h1>
+        </div>
+        <button>Watch the video</button>
+    </div>
+    <div class="item" style="background-color: #C7B9FF">
+        <div class="container">
+            <span>Blog post</span>
+            <h1>Making Figma better for developers</h1>
+        </div>
+        <button>Go to the blog</button>
+    </div>
+    <div class="item" style="background-color: #FFC700">
+        <div class="container">
+            <span>Help center</span>
+            <h1>Guide to Dev Mode</h1>
+        </div>
+        <button>Read the article</button>
+    </div>
+    <div class="item" style="background-color: #FF8577">
+        <div class="container">
+            <span>Playground</span>
+            <h1>Prototype with variables</h1>
+        </div>
+        <button>Go to the playground</button>
+    </div>
+</div>
+</body>
+</html>
