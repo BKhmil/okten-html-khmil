@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        header {
+            background: #8D8484;
+            height: 20vh;
+        }
+
+        main {
+            height: 60vh;
+            display: flex;
+        }
+
+        .content-wrapper {
+            width: 73%;
+            height: 100%;
+            /*  по ідеї і без флексів тут можна обійтись  */
+            /*display: flex;*/
+            /*flex-direction: column;*/
+        }
+
+        .content-wrapper > div {
+            height: calc(100% / 3);
+        }
+
+        .content-1 {
+            background: #776969;
+        }
+
+        .content-2 {
+            background: #643030;
+        }
+
+        .content-3 {
+            background: #441818;
+        }
+
+        .spam-wrapper {
+            width: 27%;
+            height: 100%;
+            /*  і тут також можна обійтись  */
+            /*display: flex;*/
+            /*flex-direction: column;*/
+        }
+
+        .spam-wrapper > div {
+            height: 50%;
+        }
+
+        .spam-1 {
+            background: #937575;
+        }
+
+        .spam-2 {
+            background: #644C4C;
+        }
+
+        footer {
+            background: #BDBDBD;
+            height: 20vh;
+        }
+
+        .flex {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .white {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+<header class="flex">Header</header>
+<main>
+    <div class="content-wrapper">
+        <div class="content-1 flex white">Content-1</div>
+        <div class="content-2 flex white">Content-2</div>
+        <div class="content-3 flex white">Content-3</div>
+    </div>
+    <div class="spam-wrapper">
+        <div class="spam-1 flex white">Spam-1</div>
+        <div class="spam-2 flex white">Spam-2</div>
+    </div>
+</main>
+<footer class="flex">footer</footer>
+</body>
+</html>

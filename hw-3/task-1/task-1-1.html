@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        /*  пробував через
+            body * { ... },
+            але тоді скрипти із тегу script вилазять    */
+        .flex {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        header {
+            background: #D9D9D9;
+            height: 20vh;
+        }
+
+        main {
+            height: 60vh;
+        }
+
+        .wrapper {
+            width: 100%;
+            height: 100%;
+            display: flex;
+        }
+
+        .news-1 {
+            background: #817C7C;
+            width: 18%;
+            height: 100%;
+        }
+
+        .wrapper-content {
+            width: 82%;
+        }
+
+        .wrapper-content > div {
+            height: 50%;
+        }
+
+        .content-1 {
+            background: #ABA8A8;
+        }
+
+        .content-2 {
+            background: #878484;
+        }
+
+        .sponsor {
+            background: #B7AEAE;
+            width: 18vw;
+            height: 100%;
+        }
+
+        footer {
+            background: #BDBDBD;
+            height: 20vh;
+        }
+    </style>
+</head>
+<body>
+<header class="flex">Header</header>
+<main class="flex">
+    <div class="wrapper">
+        <div class="news-1 flex">News-1</div>
+        <div class="wrapper-content">
+            <div class="content-1 flex">Content-1</div>
+            <div class="content-2 flex">Content-2</div>
+        </div>
+        <div class="sponsor flex">Sponsor</div>
+    </div>
+</main>
+<footer class="flex">footer</footer>
+</body>
+</html>

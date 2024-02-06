@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        header {
+            background: #9B6F6F;
+            height: 20vh;
+        }
+
+        main {
+            height: 60vh;
+            display: flex;
+        }
+
+        main > div {
+            width: calc(100% / 3);
+            height: 100%;
+        }
+
+        .news-wrapper > div {
+            width: 100%;
+            height: calc(100% / 3);
+        }
+
+        .news-1 {
+            background: #D9D9D9;
+        }
+
+        .news-2 {
+            background: #AA9898;
+        }
+
+        .news-3 {
+            background: #C5BBBB;
+        }
+
+        .content-1 {
+            background: #8A8484;
+        }
+
+        .content-2 {
+            background: #C0B3B3;
+        }
+
+        footer {
+            background: #524B4B;
+            height: 20vh;
+        }
+
+        .flex {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .white {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+<header class="flex white">Header</header>
+<main>
+    <div class="news-wrapper">
+        <div class="news-1 flex">News-1</div>
+        <div class="news-2 flex">News-2</div>
+        <div class="news-3 flex">News-3</div>
+    </div>
+    <div class="content-1 flex">Content-1</div>
+    <div class="content-2 flex">Content-2</div>
+</main>
+<footer class="flex white">footer</footer>
+</body>
+</html>

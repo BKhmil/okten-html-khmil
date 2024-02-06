@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            font-family: "Fjalla One", sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        section {
+            height: 100vh;
+        }
+
+        #first {
+            background-color: #c5705d;
+        }
+
+        #second {
+            background-color: #8beae2;
+        }
+
+        #third {
+            background-color: #52c675;
+        }
+
+        .wrapper {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            flex-flow: column nowrap;
+            box-sizing: border-box;
+            padding-top: 100px;
+        }
+
+        h1 {
+            font-size: 2.4em;
+            font-weight: 400;
+            margin-bottom: 50px;
+        }
+
+        .text-wrapper {
+            width: 90%;
+        }
+
+        p {
+            text-align: center;
+            font-size: 1.4em;
+        }
+
+        a {
+            text-decoration: none;
+            display: block;
+            font-size: 4em;
+        }
+
+        .up {
+            margin-bottom: 50px;
+        }
+
+        .down {
+            margin-top: 50px;
+        }
+
+        .wrapper > a {
+            color: black;
+        }
+    </style>
+</head>
+<body>
+<section id="first">
+    <div class="wrapper">
+        <h1>Section Title</h1>
+        <div class="text-wrapper">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, alias cum facilis laudantium nisi nulla
+                optio
+                reprehenderit sunt vel. Aliquam aut cumque dolore dolorem doloribus eligendi eum, facere fugit ipsa iste
+                mollitia nobis obcaecati quia, sunt suscipit. Atque culpa doloribus laborum nisi, odit officia quo?</p>
+            <br/>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut consectetur enim facilis maxime sunt
+                temporibus
+                voluptate voluptatem? Aperiam, aspernatur blanditiis in ipsa omnis quam quos repudiandae soluta
+                suscipit.
+                Animi at, delectus deserunt distinctio dolor dolores ea et eveniet excepturi in libero qui sed ullam
+                vero.</p>
+        </div>
+        <a href="#second" class="down">
+            &darr;
+        </a>
+    </div>
+</section>
+<section id="second">
+    <div class="wrapper">
+        <a href="#first" class="up">
+            &uarr;
+        </a>
+        <h1>Section Title</h1>
+        <div class="text-wrapper">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, alias cum facilis laudantium nisi nulla
+                optio
+                reprehenderit sunt vel. Aliquam aut cumque dolore dolorem doloribus eligendi eum, facere fugit ipsa iste
+                mollitia nobis obcaecati quia, sunt suscipit. Atque culpa doloribus laborum nisi, odit officia quo?</p>
+            <br/>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut consectetur enim facilis maxime sunt
+                temporibus
+                voluptate voluptatem? Aperiam, aspernatur blanditiis in ipsa omnis quam quos repudiandae soluta
+                suscipit.
+                Animi at, delectus deserunt distinctio dolor dolores ea et eveniet excepturi in libero qui sed ullam
+                vero.</p>
+        </div>
+        <a href="#third" class="down">
+            &darr;
+        </a>
+    </div>
+</section>
+<section id="third">
+    <div class="wrapper">
+        <a href="#second" class="up">
+            &uarr;
+        </a>
+        <h1>Section Title</h1>
+        <div class="text-wrapper">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, alias cum facilis laudantium nisi nulla
+                optio
+                reprehenderit sunt vel. Aliquam aut cumque dolore dolorem doloribus eligendi eum, facere fugit ipsa iste
+                mollitia nobis obcaecati quia, sunt suscipit. Atque culpa doloribus laborum nisi, odit officia quo?</p>
+            <br/>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut consectetur enim facilis maxime sunt
+                temporibus
+                voluptate voluptatem? Aperiam, aspernatur blanditiis in ipsa omnis quam quos repudiandae soluta
+                suscipit.
+                Animi at, delectus deserunt distinctio dolor dolores ea et eveniet excepturi in libero qui sed ullam
+                vero.</p>
+        </div>
+    </div>
+</section>
+</body>
+</html>

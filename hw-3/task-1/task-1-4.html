@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            color: white;
+        }
+
+        header {
+            background: #927D7D;
+            height: 20vh;
+        }
+
+        main {
+            height: 60vh;
+            display: flex;
+        }
+
+        .news, .spam {
+            width: 20%;
+        }
+
+        main > div {
+            height: 100%;
+        }
+
+        .news {
+            background: #817C7C;
+        }
+
+        .content {
+            background: #A74848;
+            width: 60%;
+        }
+
+        .spam {
+            background: #B7AEAE;
+        }
+
+        footer {
+            background: #BDBDBD;
+            height: 20vh;
+        }
+
+        .flex {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+<header class="flex">Header</header>
+<main>
+    <div class="news flex">News</div>
+    <div class="content flex">Content</div>
+    <div class="spam flex">Spam</div>
+</main>
+<footer class="flex">footer</footer>
+</body>
+</html>
