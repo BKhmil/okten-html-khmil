@@ -33,6 +33,12 @@
             justify-content: center;
         }
 
+        section > .card:nth-child(even),
+        section > .card:nth-child(even) > .icon > .circle /*  якщо коло через svg, то цей рядок не пишемо  */
+        {
+            border-color: #65856E;
+        }
+
         .title {
             font-size: 40px;
         }
@@ -98,7 +104,7 @@
         </div>
         <!--        Через svg, тоді клас icon і все що всередині нього не потрібне       -->
         <!--        <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100" fill="none">-->
-        <!--            <circle cx="50" cy="50" r="48" fill="white" stroke="#554C4C" stroke-width="4"/>-->
+        <!--            <circle cx="50" cy="50" r="48" fill="white" stroke="#65856E" stroke-width="4"/>-->
         <!--        </svg>-->
         <!--        <img src="./icons/second.png" alt="second">-->
         <span class="title">Lorem</span>
