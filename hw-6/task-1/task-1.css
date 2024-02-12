@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+}
+
+.wrapper > div {
+    background-color: lightgray;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.a {
+    grid-area: a;
+}
+
+.b {
+    grid-area: b;
+}
+
+.c {
+    grid-area: c;
+}
+
+.wrapper {
+    margin: 2vh;
+    height: 96vh;
+    display: grid;
+    grid-template-areas:
+        "a a a a"
+        "b b b c";
+    grid-template-rows: 1fr 2fr;
+    grid-gap: 2vh;
+}

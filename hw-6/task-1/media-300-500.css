@@ -1,0 +1,12 @@
+@media screen and (min-width: 300px) and (max-width: 500px) {
+    .wrapper {
+        margin: 4vh;
+        grid-gap: 4vh;
+        height: 92vh;
+        grid-template-areas:
+            "a a a a"
+            "b b b b"
+            "c c c c";
+        grid-template-rows: 1fr 3fr 1fr;
+    }
+}
