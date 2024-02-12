@@ -4,9 +4,9 @@
         grid-gap: 4vh;
         height: 92vh;
         grid-template-areas:
-            "a a a a"
-            "b b b b"
-            "c c c c";
+            "a"
+            "b"
+            "c";
         grid-template-rows: 1fr 3fr 1fr;
     }
 }
