@@ -1,0 +1,405 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #19191B;
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+    color: #fff;
+    font-family: Loto, sans-serif;
+    /*overflow-x: hidden;*/ /* only for my screen width */
+}
+
+/* 8vw+8vw between body and content */
+
+/*#####################    HEADER    #####################*/
+header {
+    /* because 120px in figma == 8vw
+       100 - (8 * 2) */
+    width: 84vw;
+    height: 10vh;
+}
+
+nav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1vh;
+    box-sizing: border-box;
+}
+
+.logo-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+}
+
+.logo-text {
+    font-weight: bold; /*  same as 700  */
+    font-family: Montserrat, sans-serif;
+    font-size: 1.75rem;
+}
+
+.routes {
+    width: 27vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.routes > div {
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.70);
+    transition: 0.7s;
+}
+
+.routes > div:hover {
+    color: #5454D4;
+    transition: 0.7s;
+}
+
+nav > button {
+    background-color: transparent;
+    color: #fff;
+    width: 10vw;
+    height: 4vh;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid #FFF;
+    backdrop-filter: blur(1px);
+    outline: none;
+}
+
+/*#####################    MAIN    #####################*/
+main {
+    width: 84vw;
+    margin-bottom: 25vh;
+}
+
+/*---------- section what is enver ----------*/
+.what-is-enver {
+    width: 100%;
+    display: flex;
+    gap: 5vw; /* why not */
+    /*justify-content: space-between;*/
+    margin-bottom: 15vh;
+}
+
+.what-is-enver-content {
+    width: 40vw;
+}
+
+.what-is-enver-content > h1 {
+    text-transform: capitalize; /* or just Build Your Awesome Platform  */
+    font-size: 5rem;
+    font-weight: 400;
+    line-height: 105%; /* from Figma */
+    margin-top: 12vh;
+    margin-bottom: 2vh;
+}
+
+.p-type-1 {
+    color: rgba(255, 255, 255, 0.70);
+    font-size: 1.3rem;
+    letter-spacing: -0.04106rem; /* -0.657px from Figma / 16px */
+    line-height: 185.714%; /*  from Figma  */
+}
+
+.what-is-enver-content > p {
+    width: 38vw;
+    margin-bottom: 5vh; /* looks like not enough, but
+                           (50px in Figma * 100%) / 1024px = 4.88vh ≈ 5vh -_- */
+}
+
+.what-is-enver-content > button {
+    width: 14vw;
+    height: 6vh;
+    text-transform: capitalize;
+    border-radius: 4px;
+    background-color: #5454D4;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 1.25rem;
+    padding-left: 2vw;
+    text-align: left;
+}
+
+/*---------- section why enver ----------*/
+.why-enver {
+    width: 100%;
+    /*height: 85vh;*/
+    margin-bottom: 14vh;
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*justify-content: space-between;*/
+}
+
+.why-enver-content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5vh;
+/*    using margin because of my screen height
+      for this reason can't make section .why-enver flex */
+}
+
+.h2-type-1 {
+    text-transform: capitalize;
+    font-size: 3.75rem;
+    font-weight: 400;
+    line-height: 116.667%; /* from Figma */
+}
+
+.why-enver-content > h2 {
+    width: 40vw;
+}
+
+/* (588px in Figma * 100) / 1440px = 40.8 ≈ 40vw
+   but it looks weird on my screen*/
+.why-enver-content > p {
+    width: 40vw;
+}
+
+/* for screen in Figma design this image default width is ok,
+   so this style partly for correct view on my screen and
+   maybe we can comment this style or maybe not :) */
+.why-enver > img {
+    width: 100%;
+}
+
+/*---------- section service-enum ----------*/
+.service-enum {
+    width: 100%;
+    margin-bottom: 20vh;
+}
+
+.h-wrap {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10vh;
+}
+
+.h-wrap > h2 {
+    width: 48vw;
+    text-align: center;
+}
+
+.items {
+    width: 100%;
+    height: 61vh;
+    /*background-color: hotpink;*/
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    gap: 7vw;
+}
+
+.items h3 {
+    font-size: 1.75rem;
+    font-weight: 400; /* in Figma it's 600 but Lato font contain only
+                         400 700 900 weight on google fonts
+                         family=Lato:wght@400;700;900
+                         700 looks so fat(bold?), so my choice was 400 */
+}
+
+.items p {
+    width: 22vw;
+    height: 6vh;
+    color: rgba(255, 255, 255, 0.70);
+    text-align: center;
+    font-size: 1.25rem;
+    line-height: 140%;
+    letter-spacing: -0.03125rem;
+}
+
+.item-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item-logo > img {
+    position: absolute;
+}
+
+.items > div {
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*---------- section portfolio ----------*/
+.portfolio {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.portfolio > h2 {
+    text-transform: capitalize;
+    font-size: 3.625rem;
+    font-weight: 700; /* in Figma it's 800 but Lato font contain only
+                         400 700 900 weight on google fonts
+                         family=Lato:wght@400;700;900
+                         900 looks so fat(bold?), so my choice was 700 */
+}
+
+.projects {
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* universal style */
+.projects > img {
+    /* maybe */
+    /*width: 23vw;*/
+    /*height: 24vh;*/
+    box-sizing: border-box;
+    padding: 2%;
+    background-color: #1E1E20;
+    border-radius: 14px;
+}
+
+/*  this style correct only for 1440-1024
+    on my screen current style height is not enough  */
+/*----------------------------------------*/
+/*.project-wrapper {*/
+/*    width: 26vw;*/
+/*    height: 100%;*/
+/*    border-radius: 14px;*/
+/*    background: #1E1E20;*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*}*/
+/*#####################     FOOTER      #####################*/
+footer {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact-us {
+    width: 100%;
+    height: 68vh;
+    background: rgba(30, 30, 32, 0.50);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-us-content {
+    width: 84vw;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-us-content > h2 {
+    width: 57vw;
+    height: 14vh;
+    font-size: 3.75rem;
+    font-weight: 400;
+}
+
+.contact-us-content > button {
+    width: 14vw;
+    height: 6vh;
+    border-radius: 5px;
+    background: #5454D4;
+    outline: none;
+    text-align: center;
+    font-size: 1.3rem;
+    color: #fff;
+    border: none;
+}
+
+.end {
+    width: 84vw;
+    height: 18vh;
+}
+
+.end-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5vh;
+}
+
+.end-content > span {
+    display: none;
+}
+
+.end-content > p {
+    color: rgba(255, 255, 255, 0.70);
+    text-align: right;
+    line-height: 237.5%;
+    letter-spacing: -0.03125rem;
+}
+
+/*tu-ru-ru*/
+.field {
+    width: 60vw;
+    height: 60vh;
+    background-color: #19191B;
+    position: absolute;
+    top: -50vh;
+    left: 20vw;
+    transform: scale(0.5);
+    border: 2px solid #fff;
+}
+
+.btn-close {
+    width: fit-content;
+    height: fit-content;
+    background-color: transparent;
+    font-size: 3rem;
+    border: none;
+    outline: none;
+    margin-left: 1vw;
+    transition: 0.5s;
+    color: #5a5555;
+}
+
+.btn-close:hover {
+    color: white;
+    transition: 0.5s;
+}
+
+.text-wrapper {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.field-text {
+    width: 100%;
+    font-size: 5rem;
+    text-align: center;
+    line-height: 200%;
+}
+
+
+
+
+
